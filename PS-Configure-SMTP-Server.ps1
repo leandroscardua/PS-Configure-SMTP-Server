@@ -45,7 +45,5 @@ $SMTPSvc.FullyQualifiedDomainName ="xxxxxxx.xx"
 $SMTPSvc.UpdatedFQDN=$True
 $SMTPSvc.Win32Error=0 
 $SMTPSvc.setinfo()
-$smtpconfig.RelayIPList = @(24,0,0,128,32,0,0,128,60,0,0,128,68,0,0,128,1,0,0,0,76,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,4,0,0,0,0,0,0,0,76,0,0,128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,255,255,255,255)
-$smtpconfig.put()
 Set-Service SMTPSVC -startuptype "automatic"
 Restart-Service SMTPSVC
